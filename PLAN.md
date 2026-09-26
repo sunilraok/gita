@@ -244,7 +244,7 @@ gita/
 ├── PLAN.md                 ← this plan
 ├── README.md
 ├── content/
-│   ├── shlokas/            ← one .md per verse (02-47.md, 02-62-63.md …)
+│   ├── shlokas/            ← one .yaml per verse (03-2.47.yaml, 10-2.62-63.yaml …)
 │   ├── stories/            ← reusable stories, each with a source label
 │   └── themes.yml          ← 12 themes → verse refs
 ├── data/                   ← Sanskrit & transliteration pulled from gita/gita (Unlicense)
