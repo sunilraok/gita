@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Bhagavad Gita 2.47 shloka card</title>
+  <desc id="d">Sanskrit verse karmanye vadhikaraste with meaning and applications for family, student and workplace.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#FFF9EE"/>
+      <stop offset="1" stop-color="#F3E4C6"/>
+    </radialGradient>
+    <radialGradient id="eye" cx="50%" cy="55%" r="55%">
+      <stop offset="0" stop-color="#0E1F45"/>
+      <stop offset="0.35" stop-color="#1B3A6B"/>
+      <stop offset="0.6" stop-color="#1E7B6E"/>
+      <stop offset="0.85" stop-color="#C9A227"/>
+      <stop offset="1" stop-color="#7A9A2E"/>
+    </radialGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6B04A"/>
+      <stop offset="1" stop-color="#E8811A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <!-- manuscript border -->
+  <rect x="36" y="36" width="1008" height="1008" rx="18" fill="none" stroke="#C9A227" stroke-width="4"/>
+  <rect x="52" y="52" width="976" height="976" rx="12" fill="none" stroke="#C9A227" stroke-width="1.5" stroke-dasharray="2 8" stroke-linecap="round"/>
+  <g fill="#E8811A">
+    <circle cx="36" cy="36" r="9"/><circle cx="1044" cy="36" r="9"/>
+    <circle cx="36" cy="1044" r="9"/><circle cx="1044" cy="1044" r="9"/>
+  </g>
+
+  <!-- rising sun + lotus -->
+  <g transform="translate(540 185)">
+    <path d="M-90 0 A90 90 0 0 1 90 0 Z" fill="url(#sun)" opacity="0.9"/>
+    <g stroke="#E8811A" stroke-width="3" stroke-linecap="round" opacity="0.6">
+      <line x1="0" y1="-105" x2="0" y2="-122"/><line x1="-74" y1="-74" x2="-92" y2="-92"/>
+      <line x1="74" y1="-74" x2="92" y2="-92"/><line x1="-105" y1="-30" x2="-128" y2="-38"/>
+      <line x1="105" y1="-30" x2="128" y2="-38"/>
+    </g>
+    <g fill="#D9687A" stroke="#9E3B4E" stroke-width="2">
+      <path d="M0 10 C-22 -20 -18 -55 0 -75 C18 -55 22 -20 0 10 Z"/>
+      <path d="M0 10 C-40 -2 -58 -30 -56 -55 C-30 -48 -10 -25 0 10 Z"/>
+      <path d="M0 10 C40 -2 58 -30 56 -55 C30 -48 10 -25 0 10 Z"/>
+      <path d="M0 12 C-50 12 -80 -5 -92 -22 C-60 -28 -25 -12 0 12 Z" opacity="0.85"/>
+      <path d="M0 12 C50 12 80 -5 92 -22 C60 -28 25 -12 0 12 Z" opacity="0.85"/>
+    </g>
+    <path d="M-150 18 H150" stroke="#C9A227" stroke-width="2"/>
+  </g>
+
+  <!-- verse ref -->
+  <text x="540" y="252" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="30" letter-spacing="6" fill="#1B3A6B">BHAGAVAD GITA · 2.47</text>
+
+  <!-- Sanskrit -->
+  <g font-family="'Tiro Devanagari Sanskrit', 'Noto Serif Devanagari', 'Mangal', serif" fill="#1B3A6B" text-anchor="middle">
+    <text x="540" y="345" font-size="52">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।</text>
+    <text x="540" y="420" font-size="52">मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥</text>
+  </g>
+  <g font-family="'Cormorant Garamond', Georgia, serif" font-style="italic" font-size="26" fill="#6B4E1F" text-anchor="middle">
+    <text x="540" y="475">karmaṇy evādhikāras te mā phaleṣu kadācana</text>
+    <text x="540" y="508">mā karma-phala-hetur bhūr mā te saṅgo 'stv akarmaṇi</text>
+  </g>
+
+  <!-- divider with peacock feather -->
+  <g transform="translate(540 565)">
+    <path d="M-330 0 H-95 M95 0 H330" stroke="#C9A227" stroke-width="2"/>
+    <g transform="translate(10 0)">
+      <path d="M-40 0 H70" stroke="#6B4E1F" stroke-width="2.5"/>
+      <g stroke="#1E7B6E" stroke-width="1.6" opacity="0.8">
+        <path d="M-30 0 l-10 -14 M-20 0 l-10 -16 M-10 0 l-10 -18 M0 0 l-8 -18 M10 0 l-6 -18 M20 0 l-4 -16"/>
+        <path d="M-30 0 l-10 14 M-20 0 l-10 16 M-10 0 l-10 18 M0 0 l-8 18 M10 0 l-6 18 M20 0 l-4 16"/>
+      </g>
+      <ellipse cx="-44" cy="0" rx="30" ry="22" fill="url(#eye)"/>
+    </g>
+  </g>
+
+  <!-- meaning -->
+  <g font-family="'Cormorant Garamond', Georgia, serif" text-anchor="middle">
+    <text x="540" y="660" font-size="44" font-weight="600" fill="#9A4A0A">Your right is to the effort,</text>
+    <text x="540" y="712" font-size="44" font-weight="600" fill="#9A4A0A">never to the fruit.</text>
+    <text x="540" y="762" font-size="26" fill="#3A3226">Don't act only for the reward — and don't let that become a reason to stop acting.</text>
+  </g>
+
+  <!-- lens strip -->
+  <g font-family="'Inter', 'Source Sans 3', Arial, sans-serif" text-anchor="middle">
+    <rect x="90" y="818" width="900" height="160" rx="16" fill="#1B3A6B"/>
+    <path d="M390 840 V956 M690 840 V956" stroke="#C9A227" stroke-width="1" opacity="0.6"/>
+    <g fill="#F6B04A" font-size="20" font-weight="700" letter-spacing="3">
+      <text x="240" y="862">FAMILY</text><text x="540" y="862">STUDENT</text><text x="840" y="862">WORKPLACE</text>
+    </g>
+    <g fill="#FBF3E4" font-size="21">
+      <text x="240" y="904">Praise the child's</text><text x="240" y="934">effort, not just marks</text>
+      <text x="540" y="904">Own the study hours;</text><text x="540" y="934">release the result</text>
+      <text x="840" y="904">Judge the process,</text><text x="840" y="934">not your self-worth</text>
+    </g>
+  </g>
+
+  <text x="540" y="1015" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="22" letter-spacing="4" fill="#9A7B2C">yogaḥ karmasu kauśalam</text>
+</svg>

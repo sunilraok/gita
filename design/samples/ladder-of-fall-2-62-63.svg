@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350" role="img" aria-labelledby="t d">
+  <title id="t">The Ladder of Fall — Bhagavad Gita 2.62–63</title>
+  <desc id="d">Eight descending steps: dwelling on objects, attachment, desire, anger, delusion, loss of memory, loss of discernment, ruin. A side note shows where to break the chain.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF9EE"/>
+      <stop offset="1" stop-color="#F1DFC0"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#9A4A0A"/>
+    </marker>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <rect x="30" y="30" width="1020" height="1290" rx="18" fill="none" stroke="#C9A227" stroke-width="4"/>
+
+  <g text-anchor="middle">
+    <text x="540" y="105" font-family="'Cormorant Garamond', Georgia, serif" font-size="30" letter-spacing="6" fill="#1B3A6B">BHAGAVAD GITA · 2.62–63</text>
+    <text x="540" y="165" font-family="'Cormorant Garamond', Georgia, serif" font-size="58" font-weight="700" fill="#9A4A0A">The Ladder of Fall</text>
+    <text x="540" y="208" font-family="'Tiro Devanagari Sanskrit', 'Noto Serif Devanagari', serif" font-size="30" fill="#1B3A6B">ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते …</text>
+    <text x="540" y="244" font-family="'Inter', Arial, sans-serif" font-size="22" fill="#3A3226">How one small thought, left unchecked, can pull a person all the way down.</text>
+  </g>
+
+  <!-- steps: each shifted right and darker as it descends -->
+  <g font-family="'Inter', Arial, sans-serif">
+    <g transform="translate(90 290)">
+      <rect width="470" height="96" rx="14" fill="#F6C27A"/>
+      <text x="24" y="42" font-size="28" font-weight="700" fill="#3A2408">1 · Dwelling on it</text>
+      <text x="24" y="74" font-size="20" fill="#3A2408">dhyāna — thinking again and again</text>
+    </g>
+    <g transform="translate(140 400)">
+      <rect width="470" height="96" rx="14" fill="#F2A95A"/>
+      <text x="24" y="42" font-size="28" font-weight="700" fill="#3A2408">2 · Attachment</text>
+      <text x="24" y="74" font-size="20" fill="#3A2408">saṅga — "I like this"</text>
+    </g>
+    <g transform="translate(190 510)">
+      <rect width="470" height="96" rx="14" fill="#E8811A"/>
+      <text x="24" y="42" font-size="28" font-weight="700" fill="#2A1604">3 · Desire</text>
+      <text x="24" y="74" font-size="20" fill="#2A1604">kāma — "I must have this"</text>
+    </g>
+    <g transform="translate(240 620)">
+      <rect width="470" height="96" rx="14" fill="#C8561A"/>
+      <text x="24" y="42" font-size="28" font-weight="700" fill="#FFF4E4">4 · Anger</text>
+      <text x="24" y="74" font-size="20" fill="#FFF4E4">krodha — when desire is blocked</text>
+    </g>
+    <g transform="translate(290 730)">
+      <rect width="470" height="96" rx="14" fill="#9E3B2A"/>
+      <text x="24" y="42" font-size="28" font-weight="700" fill="#FFF4E4">5 · Delusion</text>
+      <text x="24" y="74" font-size="20" fill="#FFF4E4">sammoha — can't see clearly</text>
+    </g>
+    <g transform="translate(340 840)">
+      <rect width="470" height="96" rx="14" fill="#6E2A3A"/>
+      <text x="24" y="42" font-size="28" font-weight="700" fill="#FFF4E4">6 · Memory confused</text>
+      <text x="24" y="74" font-size="20" fill="#FFF4E4">smṛti-vibhrama — forget values</text>
+    </g>
+    <g transform="translate(390 950)">
+      <rect width="470" height="96" rx="14" fill="#3A2350"/>
+      <text x="24" y="42" font-size="28" font-weight="700" fill="#FFF4E4">7 · Judgement lost</text>
+      <text x="24" y="74" font-size="20" fill="#FFF4E4">buddhi-nāśa — can't tell right from wrong</text>
+    </g>
+    <g transform="translate(440 1060)">
+      <rect width="470" height="96" rx="14" fill="#1B1A3A"/>
+      <text x="24" y="42" font-size="28" font-weight="700" fill="#F6B04A">8 · Downfall</text>
+      <text x="24" y="74" font-size="20" fill="#FFF4E4">praṇaśyati — one is ruined</text>
+    </g>
+  </g>
+
+  <!-- break-the-chain callout -->
+  <g font-family="'Inter', Arial, sans-serif">
+    <path d="M565 338 C720 338 820 350 820 400" stroke="#1E7B6E" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+    <rect x="690" y="405" width="300" height="150" rx="14" fill="#1E7B6E"/>
+    <text x="712" y="445" font-size="24" font-weight="700" fill="#FFFFFF">Break it at step 1</text>
+    <text x="712" y="480" font-size="19" fill="#E6F4F1">Notice the thought early.</text>
+    <text x="712" y="508" font-size="19" fill="#E6F4F1">Redirect attention (6.26).</text>
+    <text x="712" y="536" font-size="19" fill="#E6F4F1">It's easiest at the top.</text>
+  </g>
+
+  <!-- lens strip -->
+  <g font-family="'Inter', Arial, sans-serif" font-size="20">
+    <rect x="70" y="1185" width="940" height="110" rx="14" fill="#1B3A6B"/>
+    <text x="95" y="1222" fill="#F6B04A" font-weight="700">FAMILY</text>
+    <text x="95" y="1256" fill="#FBF3E4">A small grudge replayed</text>
+    <text x="95" y="1280" fill="#FBF3E4">becomes a family rift</text>
+    <text x="410" y="1222" fill="#F6B04A" font-weight="700">STUDENT</text>
+    <text x="410" y="1256" fill="#FBF3E4">"Just one more reel"</text>
+    <text x="410" y="1280" fill="#FBF3E4">becomes a lost evening</text>
+    <text x="725" y="1222" fill="#F6B04A" font-weight="700">WORKPLACE</text>
+    <text x="725" y="1256" fill="#FBF3E4">Envy of a colleague's</text>
+    <text x="725" y="1280" fill="#FBF3E4">promotion clouds judgement</text>
+  </g>
+</svg>
