@@ -1,0 +1,142 @@
+#!/usr/bin/env python3
+"""Build site/data/shlokas.js from content/shlokas/*.yaml.
+
+Sanskrit text, transliteration and word meanings come from the public-domain
+gita/gita dataset (Unlicense). The needed verses are cached in
+data/gita-verses.json; pass --refresh to re-download the full dataset.
+Kannada-script shlokas are generated from Devanagari, never typed by hand.
+"""
+import glob
+import json
+import os
+import re
+import sys
+import urllib.request
+
+import yaml
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATASET_URL = "https://raw.githubusercontent.com/gita/gita/main/data/verse.json"
+CACHE = os.path.join(ROOT, "data", "gita-verses.json")
+OUT = os.path.join(ROOT, "site", "data", "shlokas.js")
+
+# Fixes for dataset line breaks that split a word across half-verses.
+OVERRIDES = {
+    (2, 22): {
+        "text": "वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि ।\n"
+                "तथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥",
+        "transliteration": "vāsānsi jīrṇāni yathā vihāya navāni gṛihṇāti naro ’parāṇi\n"
+                           "tathā śharīrāṇi vihāya jīrṇāny anyāni sanyāti navāni dehī",
+    },
+}
+
+THEMES = [
+    {"id": "courage", "en": "Courage & Choice", "kn": "ಧೈರ್ಯ ಮತ್ತು ಆಯ್ಕೆ"},
+    {"id": "work", "en": "Work & Effort", "kn": "ಕರ್ಮ ಮತ್ತು ಪ್ರಯತ್ನ"},
+    {"id": "mind", "en": "Mastering the Mind", "kn": "ಮನಸ್ಸಿನ ನಿಗ್ರಹ"},
+    {"id": "steady", "en": "Steady in Ups & Downs", "kn": "ಏಳುಬೀಳುಗಳಲ್ಲಿ ಸ್ಥಿರತೆ"},
+    {"id": "learning", "en": "Learning & Balance", "kn": "ಕಲಿಕೆ ಮತ್ತು ಸಮತೋಲನ"},
+    {"id": "relationships", "en": "Relationships & Speech", "kn": "ಸಂಬಂಧ ಮತ್ತು ಮಾತು"},
+    {"id": "life", "en": "Life, Loss & Freedom", "kn": "ಬದುಕು, ನಷ್ಟ ಮತ್ತು ಸ್ವಾತಂತ್ರ್ಯ"},
+]
+
+
+def parse_ref(ref):
+    """'2.62-63' -> [(2, 62), (2, 63)]"""
+    ch, verses = ref.split(".")
+    if "-" in verses:
+        a, b = verses.split("-")
+        return [(int(ch), v) for v in range(int(a), int(b) + 1)]
+    return [(int(ch), int(verses))]
+
+
+def load_dataset(needed, refresh):
+    if not refresh and os.path.exists(CACHE):
+        cached = json.load(open(CACHE, encoding="utf-8"))
+        if all(f"{c}.{v}" in cached["verses"] for c, v in needed):
+            return cached["verses"]
+    print("Downloading", DATASET_URL)
+    with urllib.request.urlopen(DATASET_URL) as r:
+        full = json.load(r)
+    verses = {}
+    for v in full:
+        key = (v["chapter_number"], v["verse_number"])
+        if key in needed:
+            verses[f"{key[0]}.{key[1]}"] = {
+                "text": v["text"],
+                "transliteration": v["transliteration"],
+                "word_meanings": v["word_meanings"],
+            }
+    json.dump(
+        {"source": "https://github.com/gita/gita (Unlicense, public domain)", "verses": verses},
+        open(CACHE, "w", encoding="utf-8"), ensure_ascii=False, indent=1, sort_keys=True,
+    )
+    return verses
+
+
+def clean_devanagari(text, ch, v):
+    if (ch, v) in OVERRIDES:
+        return OVERRIDES[(ch, v)]["text"]
+    text = re.sub(r"।।\s*\d+\.\d+\s*।।", "", text)
+    lines = [l.strip() for l in text.splitlines() if l.strip() and not l.strip().endswith("वाच")]
+    joined = " ".join(lines)
+    first, _, second = joined.partition("।")
+    return f"{first.strip()} ।\n{second.strip()} ॥"
+
+
+def clean_translit(text, ch, v):
+    if (ch, v) in OVERRIDES:
+        return OVERRIDES[(ch, v)]["transliteration"]
+    lines = [l.strip() for l in text.splitlines() if l.strip() and "uvācha" not in l]
+    return "\n".join(lines)
+
+
+def to_kannada(deva):
+    """Devanagari and Kannada Unicode blocks are parallel (offset 0x380)."""
+    out = []
+    for c in deva:
+        o = ord(c)
+        if c in "।॥":
+            out.append(c)
+        elif o == 0x0901:  # candrabindu -> anusvara
+            out.append("ಂ")
+        elif 0x0900 <= o <= 0x097F:
+            out.append(chr(o + 0x380))
+        else:
+            out.append(c)
+    return "".join(out)
+
+
+def main():
+    files = sorted(glob.glob(os.path.join(ROOT, "content", "shlokas", "*.yaml")))
+    entries = [yaml.safe_load(open(f, encoding="utf-8")) for f in files]
+    needed = {cv for e in entries for cv in parse_ref(e["ref"])}
+    dataset = load_dataset(needed, "--refresh" in sys.argv)
+
+    shlokas = []
+    for e in sorted(entries, key=lambda e: e["day"]):
+        parts = []
+        for ch, v in parse_ref(e["ref"]):
+            d = dataset[f"{ch}.{v}"]
+            deva = clean_devanagari(d["text"], ch, v)
+            parts.append({
+                "ref": f"{ch}.{v}",
+                "devanagari": deva,
+                "kannada": to_kannada(deva),
+                "roman": clean_translit(d["transliteration"], ch, v),
+                "words": d["word_meanings"].strip(),
+            })
+        e["verses"] = parts
+        shlokas.append(e)
+
+    payload = {"themes": THEMES, "shlokas": shlokas}
+    with open(OUT, "w", encoding="utf-8") as f:
+        f.write("// Generated by scripts/build.py — edit content/shlokas/*.yaml instead.\n")
+        f.write("window.GITA_DATA = ")
+        json.dump(payload, f, ensure_ascii=False, indent=1)
+        f.write(";\n")
+    print(f"Wrote {len(shlokas)} shlokas to {os.path.relpath(OUT, ROOT)}")
+
+
+if __name__ == "__main__":
+    main()

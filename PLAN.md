@@ -53,7 +53,7 @@ only if they carry a clear practical message.
 
 ## 4. Candidate list (≈45 shlokas, 12 life themes)
 
-★ = proposed **Core 21** (published first — works as a "21-day Gita" series).
+★ = **Core 21** — built into the website as a "21-day Gita" journey (4.39 and 18.66 move to phase 2 so the first set stays practical for students and everyday readers).
 
 ### A. Doing your work well (Karma Yoga)
 | Ref | Opening words | Everyday message |
@@ -101,7 +101,7 @@ only if they carry a clear practical message.
 |---|---|---|
 | ★ 4.34 | tad viddhi praṇipātena | Learn through humility, questions and service |
 | 4.38 | na hi jñānena sadṛśaṃ | Nothing purifies like knowledge |
-| ★ 4.39 | śraddhāvāl labhate jñānaṃ | Faith + dedication + self-control → knowledge |
+| 4.39 | śraddhāvāl labhate jñānaṃ | Faith + dedication + self-control → knowledge |
 | 4.40 | … saṃśayātmā vinaśyati | Chronic doubt destroys |
 | ★ 2.40 | nehābhikrama-nāśo 'sti | No sincere effort is ever wasted |
 | 6.40 | na hi kalyāṇa-kṛt kaścid durgatiṃ | One who does good never comes to a bad end |
@@ -123,7 +123,7 @@ only if they carry a clear practical message.
 | Ref | Opening words | Everyday message |
 |---|---|---|
 | ★ 17.15 | anudvega-karaṃ vākyaṃ | Speak truthfully, pleasantly, helpfully |
-| ★ 12.13–14 | adveṣṭā sarva-bhūtānāṃ maitraḥ karuṇa eva ca | Friendliness and compassion, no hatred |
+| ★ 12.13 (–14) | adveṣṭā sarva-bhūtānāṃ maitraḥ karuṇa eva ca | Friendliness and compassion, no hatred |
 | 12.15 | yasmān nodvijate lokaḥ | Don't disturb others; don't be disturbed by them |
 | 5.18 | vidyā-vinaya-sampanne | Equal vision — see the same dignity in all |
 | 16.1–3 | abhayaṃ sattva-saṃśuddhiḥ | The 26 divine qualities — a character checklist |
@@ -147,12 +147,12 @@ only if they carry a clear practical message.
 | 4.7–8 | yadā yadā hi dharmasya | Goodness is always renewed |
 | 9.22 | ananyāś cintayanto māṃ … yoga-kṣemaṃ vahāmy aham | "I carry what you need" (motto of India's LIC) |
 | ★ 18.63 | vimṛśyaitad aśeṣeṇa yathecchasi tathā kuru | Reflect fully, then choose freely — the Gita respects your judgement |
-| ★ 18.66 | sarva-dharmān parityajya | Let go of fear; surrender and be free |
+| 18.66 | sarva-dharmān parityajya | Let go of fear; surrender and be free |
 | 18.78 | yatra yogeśvaraḥ kṛṣṇo | Where wisdom and effort unite, victory follows |
 
 ## 5. Template for each shloka entry
 
-See the fully worked example: [`content/shlokas/02-47.md`](content/shlokas/02-47.md).
+See a fully worked example: [`content/shlokas/03-2.47.yaml`](content/shlokas/03-2.47.yaml).
 
 ```
 Title + theme tag + chapter/verse
@@ -261,7 +261,7 @@ gita/
 
 | Phase | Work | Output |
 |---|---|---|
-| **0. Foundation** (this PR) | Research sources, selection method, candidate list, template, visual theme, 2 sample graphics, 1 worked entry | `PLAN.md`, samples |
+| **0. Foundation** (done) | Research sources, selection method, candidate list, template, visual theme, 2 sample graphics, 1 worked entry | `PLAN.md`, samples |
 | **1. Core 21 content** | Write all 21 entries; verify Sanskrit against gita/gita; cross-check meanings against Telang & Arnold | 21 Markdown entries |
 | **2. Graphics** | Motif library, card template, render 21 cards + 6 concept diagrams | PNG/SVG set |
 | **3. Review** | Accuracy review by someone who reads Sanskrit; sensitivity review of stories; readability test with a student, a parent and a working professional | Review notes, fixes |
@@ -282,9 +282,24 @@ gita/
   figurative depictions unless reviewed.
 - **Attribution:** a Sources section on every entry and a site-wide credits page.
 
-## 11. Open decisions for you
+## 11. Decisions (September 2026)
 
-1. Primary audience first — all four lenses, or start with students + workplace?
-2. Delivery channel priority — website, PDF booklet, or daily social cards?
-3. Languages beyond English (Hindi, Telugu, Kannada, …)?
-4. Illustrations — pure vector line-art (fast, consistent) vs. commissioned story art?
+| Question | Decision |
+|---|---|
+| Audience | Students and everyday people — at home and at work. Each shloka has three "life lenses": 🎓 students, 🏠 home, 💼 work. |
+| Channel | A website first (static, no server; GitHub Pages ready). |
+| Languages | English and Kannada, switchable from the header. |
+| Shloka script | Readers choose Devanagari, English letters or Kannada letters in Settings, or with the buttons above each shloka. **Default follows the language:** English → English letters, Kannada → Kannada script. |
+| Illustrations | One concept diagram per shloka, drawn as vector graphics with labels in the reader's language (for example, circle of control for 2.47, the ladder of fall for 2.62–63, four speech filters for 17.15). |
+
+## 12. What is built (phase 1)
+
+- `content/shlokas/*.yaml`: 21 bilingual entries (title, key message, meaning, three life lenses, story with source label, common misreading, daily practice, related verses).
+- `scripts/build.py`: merges the entries with the public-domain Sanskrit text, generates Kannada script from the Devanagari by code, and writes `site/data/shlokas.js`.
+- `site/`: the website (home with shloka of the day, theme filters, 21 shloka pages, about page, settings), plus `site/illustrations.js`, which draws the 21 illustrations.
+- `.github/workflows/pages.yml`: deploys `site/` to GitHub Pages on pushes to `main`.
+
+### Still to do
+- Review of the Kannada text by native Kannada readers and of meanings by a Sanskrit reader. The Kannada is a first draft.
+- Word-by-word meanings exist only in English (from the dataset); Kannada word glosses come later.
+- Audio recitation, more shlokas (phase 2 list above), printable cards.

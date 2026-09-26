@@ -1,18 +1,32 @@
-# Gita for Everyday Life
+# Gita for Everyday Life · ನಿತ್ಯ ಜೀವನಕ್ಕೆ ಗೀತೆ
 
-A curated, illustrated collection of the most widely acclaimed Bhagavad Gita shlokas
-that help in daily life — with Sanskrit, meanings, applications for families,
-students and working professionals, stories, and graphics.
+A bilingual (English / ಕನ್ನಡ) website presenting 21 widely loved Bhagavad Gita
+shlokas for students and everyday life at home and at work. Each shloka has a
+simple meaning, how it applies to students, home and work, a story, a
+misreading to avoid, a daily practice, and an illustration.
 
-- **Plan:** [PLAN.md](PLAN.md): sources, selection method, candidate list, visual theme, phases
-- **Worked example:** [content/shlokas/02-47.md](content/shlokas/02-47.md)
-- **Sample graphics:**
-  - [Shloka card — 2.47](design/samples/card-2-47.svg)
-  - [Ladder of Fall — 2.62–63](design/samples/ladder-of-fall-2-62-63.svg)
+Shlokas can be shown in **Devanagari**, **English letters** or **Kannada
+letters**. The default follows the chosen language.
 
-<p align="center">
-  <img src="design/samples/card-2-47.svg" width="420" alt="Shloka card for BG 2.47">
-  <img src="design/samples/ladder-of-fall-2-62-63.svg" width="336" alt="Ladder of Fall diagram for BG 2.62–63">
-</p>
+## View the site
 
-Sanskrit text is sourced from the public-domain [gita/gita](https://github.com/gita/gita) dataset.
+Open `site/index.html` in a browser. It needs no server or build step.
+
+## Edit content
+
+1. Edit or add a file in `content/shlokas/` (one YAML file per shloka, with `en` and `kn` sections).
+2. Run `python3 scripts/build.py` (needs `pyyaml`). This regenerates `site/data/shlokas.js`.
+
+The Sanskrit text is never typed by hand. It comes from the public-domain
+[gita/gita](https://github.com/gita/gita) dataset (cached in `data/gita-verses.json`),
+and the Kannada script is generated from the Devanagari.
+
+## Publish
+
+`.github/workflows/pages.yml` deploys `site/` to GitHub Pages on every push to
+`main`. To turn it on, go to **Settings → Pages → Source** and choose **GitHub Actions**.
+
+## Plan
+
+See [PLAN.md](PLAN.md) for sources, selection method, decisions and next phases.
+The first sample graphics are in `design/samples/`.
