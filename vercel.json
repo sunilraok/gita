@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo 'No install needed'",
+  "buildCommand": "echo 'Static site: site/data/shlokas.js is prebuilt by scripts/build.py'",
+  "outputDirectory": "site"
+}
