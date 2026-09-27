@@ -26,6 +26,13 @@ and the Kannada script is generated from the Devanagari.
 `.github/workflows/pages.yml` deploys `site/` to GitHub Pages on every push to
 `main`. To turn it on, go to **Settings → Pages → Source** and choose **GitHub Actions**.
 
+### Vercel
+
+`vercel.json` tells Vercel to serve the `site/` folder with no build step
+(the generated `site/data/shlokas.js` is committed). Import the repo in Vercel
+and keep the defaults; after editing content, run `python3 scripts/build.py`
+and commit the result before pushing.
+
 ## Plan
 
 See [PLAN.md](PLAN.md) for sources, selection method, decisions and next phases.
