@@ -261,7 +261,7 @@
       <ul>
         <li>Sanskrit text, transliteration and word-by-word meanings: the <a href="https://github.com/gita/gita">gita/gita</a> dataset (Unlicense — public domain). Kannada script is generated automatically from the Devanagari.</li>
         <li>Stories come from the Mahabharata, Ramayana, Puranas and Upanishads. Folk tales and illustrative modern stories are labelled as such.</li>
-        <li>Meanings and applications are written fresh for this project, cross-checked against public-domain translations (Edwin Arnold 1885, K. T. Telang 1882).</li>
+        <li>Meanings and applications are written fresh for this project. A check against public-domain translations (Edwin Arnold 1885, K. T. Telang 1882) is planned.</li>
       </ul>
       <h2>Review</h2>
       <p>The Kannada translation is a first draft awaiting review by native Kannada and Sanskrit readers. Corrections are welcome.</p>
