@@ -7,7 +7,7 @@
     greenLt: "#D5ECE7", ink: "#3A3226", maroon: "#9E3B2A", grey: "#9A9186", greyLt: "#E7E1D6",
   };
 
-  const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
   // Text with optional line breaks ("\n").
   function T(x, y, s, o = {}) {

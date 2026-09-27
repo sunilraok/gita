@@ -161,13 +161,17 @@
     { cite: "Kashinath Trimbak Telang, The Bhagavadgītā (Sacred Books of the East, vol. 8, 1882)", url: "https://sacred-texts.com/hin/sbe08/index.htm" },
   ];
   const firstVerse = (ref) => { const [c, v] = ref.split("."); return [c, v.split("-")[0]]; };
-  const verseLinks = (ref) => {
-    const [c, v] = firstVerse(ref);
-    return [
+  // "2.62-63" -> [["2", "62"], ["2", "63"]]
+  const allVerses = (ref) => {
+    const [c, v] = ref.split(".");
+    const [a, b = a] = v.split("-").map(Number);
+    return Array.from({ length: b - a + 1 }, (_, i) => [c, String(a + i)]);
+  };
+  const verseLinks = (ref) =>
+    allVerses(ref).flatMap(([c, v]) => [
       { cite: `bhagavadgita.io — ${c}.${v}`, url: `https://bhagavadgita.io/chapter/${c}/verse/${v}/` },
       { cite: `Gita Supersite, IIT Kanpur — ${c}.${v}`, url: `https://www.gitasupersite.iitk.ac.in/srimad?language=dv&field_chapter_value=${c}&field_nsutra_value=${v}` },
-    ];
-  };
+    ]);
   const ext = (r) => r.url
     ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.cite)}</a>`
     : esc(r.cite);
@@ -202,7 +206,9 @@
   }
 
   function viewHome(themeFilter) {
-    const dayIndex = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 864e5) % DATA.shlokas.length;
+    const now = new Date();
+    const dayOfYear = Math.round((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(now.getFullYear(), 0, 1)) / 864e5); // Jan 1 = 0
+    const dayIndex = dayOfYear % DATA.shlokas.length;
     const tod = DATA.shlokas[dayIndex];
     const list = themeFilter ? DATA.shlokas.filter((s) => s.theme === themeFilter) : DATA.shlokas;
     const themes = `<div class="chips theme-chips">

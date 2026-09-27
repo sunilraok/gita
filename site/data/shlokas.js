@@ -871,7 +871,7 @@ window.GITA_DATA = {
    "theme": "learning",
    "illustration": "three-pillars",
    "related": [
-    "2.7",
+    "2.40",
     "6.5",
     "18.63"
    ],
