@@ -22,7 +22,8 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --bg: #14131A;
     --bg-2: #1C1B24;
     --surface: #221F2A;
@@ -32,6 +33,17 @@
     --heading: #F6C27A;
     --accent-text: #F6B04A;
   }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #14131A;
+  --bg-2: #1C1B24;
+  --surface: #221F2A;
+  --ink: #F1E9DA;
+  --muted: #BFB29C;
+  --line: #3A3444;
+  --heading: #F6C27A;
+  --accent-text: #F6B04A;
 }
 
 * { box-sizing: border-box; }
@@ -48,7 +60,7 @@ img, svg { max-width: 100%; }
 
 /* ---- header / footer ---------------------------------------------------- */
 .site-header {
-  position: sticky; top: 0; z-index: 10;
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
   padding: 10px clamp(16px, 4vw, 40px);
   background: color-mix(in srgb, var(--bg) 88%, transparent);
