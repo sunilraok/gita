@@ -3,6 +3,10 @@ day: 19
 theme: relationships
 illustration: humble-offering
 related: ["12.13", "17.15", "2.50"]
+sources:
+  story:
+    cite: Bhagavata Purana, Canto 10, Chapters 80–81
+    url: https://vedabase.io/en/library/sb/10/81/
 en:
   title: "A leaf, a flower, a fruit, a little water"
   essence: "It is the love behind the offering that matters, not its cost."
@@ -25,7 +29,7 @@ en:
     title: "Sudama's handful of rice"
     source: "Bhagavata Purana, Book 10"
     text: >-
-      Sudama, Krishna's childhood friend, was very poor. His wife urged him to
+      Sudama (as tradition names him), Krishna's childhood friend, was very poor. His wife urged him to
       visit Krishna, now king of Dwaraka. With nothing else to bring, Sudama
       carried a handful of flattened rice tied in a cloth, too ashamed to offer
       it. Krishna found it, and ate it with delight as if it were the finest

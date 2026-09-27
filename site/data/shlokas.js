@@ -48,6 +48,12 @@ window.GITA_DATA = {
     "3.35",
     "18.63"
    ],
+   "sources": {
+    "story": {
+     "cite": "Bhagavad Gita 1.28–47 and 2.1–9 (Arjuna's despair)",
+     "verse": "2.3"
+    }
+   },
    "en": {
     "title": "Rise up — don't give in to weakness",
     "essence": "Fear shrinks the heart. Stand up and face what is in front of you.",
@@ -100,6 +106,12 @@ window.GITA_DATA = {
     "2.3",
     "6.5"
    ],
+   "sources": {
+    "story": {
+     "cite": "Bhagavad Gita 2.5 (Arjuna: better to live on alms) and 3.35",
+     "verse": "3.35"
+    }
+   },
    "en": {
     "title": "Walk your own path",
     "essence": "Your own path, walked imperfectly, is better than someone else's copied perfectly.",
@@ -152,6 +164,12 @@ window.GITA_DATA = {
     "2.50",
     "18.48"
    ],
+   "sources": {
+    "story": {
+     "cite": "Mahabharata, Adi Parva (Sambhava Parva), Section CXXXIV — K. M. Ganguli (trans.), 1883–96",
+     "url": "https://www.wisdomlib.org/hinduism/book/the-mahabharata-mohan/d/doc4127.html"
+    }
+   },
    "en": {
     "title": "Your right is to the effort, not the fruit",
     "essence": "Give your full effort; let go of anxiety about the result.",
@@ -162,7 +180,7 @@ window.GITA_DATA = {
     "story": {
      "title": "The bird's eye",
      "source": "Mahabharata, Adi Parva",
-     "text": "Guru Drona placed a wooden bird on a tree and asked his students to aim at its eye. Before each shot he asked, \"What do you see?\" One saw the tree, the branches and the bird; another saw the sky and the leaves. Drona told each of them to lower the bow. Arjuna said, \"I see only the bird's eye.\" \"Shoot,\" said Drona — and Arjuna struck the mark.",
+     "text": "Guru Drona had an artificial bird placed on a tree and asked his students to aim at its eye. Before each shot he asked, \"What do you see?\" One saw the tree, the branches and the bird; another saw the sky and the leaves. Drona told each of them to lower the bow. Arjuna said, \"I see only the bird's eye.\" \"Shoot,\" said Drona — and Arjuna struck the mark.",
      "connection": "Arjuna's attention was entirely on the act in front of him — not on the applause, the rivals or the prize. Full presence in the action is exactly what this verse asks for."
     },
     "misreading": "\"Don't care about results.\" No — plan for results and aim high. The verse asks you not to be attached to results or paralysed by them.",
@@ -178,7 +196,7 @@ window.GITA_DATA = {
     "story": {
      "title": "ಹಕ್ಕಿಯ ಕಣ್ಣು",
      "source": "ಮಹಾಭಾರತ, ಆದಿಪರ್ವ",
-     "text": "ಗುರು ದ್ರೋಣರು ಮರದ ಮೇಲೆ ಮರದ ಹಕ್ಕಿಯೊಂದನ್ನು ಇಟ್ಟು, ಅದರ ಕಣ್ಣಿಗೆ ಗುರಿ ಇಡಲು ಶಿಷ್ಯರಿಗೆ ಹೇಳಿದರು. ಬಾಣ ಬಿಡುವ ಮುನ್ನ ಪ್ರತಿಯೊಬ್ಬರನ್ನೂ \"ನಿನಗೆ ಏನು ಕಾಣುತ್ತಿದೆ?\" ಎಂದು ಕೇಳಿದರು. ಒಬ್ಬನಿಗೆ ಮರ, ಕೊಂಬೆ, ಹಕ್ಕಿ ಕಂಡವು; ಇನ್ನೊಬ್ಬನಿಗೆ ಆಕಾಶ, ಎಲೆಗಳು. ದ್ರೋಣರು ಎಲ್ಲರಿಗೂ ಬಿಲ್ಲು ಇಳಿಸಲು ಹೇಳಿದರು. ಅರ್ಜುನ \"ನನಗೆ ಹಕ್ಕಿಯ ಕಣ್ಣು ಮಾತ್ರ ಕಾಣುತ್ತಿದೆ\" ಎಂದನು. \"ಬಿಡು\" ಎಂದರು ದ್ರೋಣರು — ಅರ್ಜುನನ ಬಾಣ ಗುರಿ ಮುಟ್ಟಿತು.",
+     "text": "ಗುರು ದ್ರೋಣರು ಮರದ ಮೇಲೆ ಒಂದು ಕೃತಕ ಹಕ್ಕಿಯನ್ನು ಇರಿಸಿ, ಅದರ ಕಣ್ಣಿಗೆ ಗುರಿ ಇಡಲು ಶಿಷ್ಯರಿಗೆ ಹೇಳಿದರು. ಬಾಣ ಬಿಡುವ ಮುನ್ನ ಪ್ರತಿಯೊಬ್ಬರನ್ನೂ \"ನಿನಗೆ ಏನು ಕಾಣುತ್ತಿದೆ?\" ಎಂದು ಕೇಳಿದರು. ಒಬ್ಬನಿಗೆ ಮರ, ಕೊಂಬೆ, ಹಕ್ಕಿ ಕಂಡವು; ಇನ್ನೊಬ್ಬನಿಗೆ ಆಕಾಶ, ಎಲೆಗಳು. ದ್ರೋಣರು ಎಲ್ಲರಿಗೂ ಬಿಲ್ಲು ಇಳಿಸಲು ಹೇಳಿದರು. ಅರ್ಜುನ \"ನನಗೆ ಹಕ್ಕಿಯ ಕಣ್ಣು ಮಾತ್ರ ಕಾಣುತ್ತಿದೆ\" ಎಂದನು. \"ಬಿಡು\" ಎಂದರು ದ್ರೋಣರು — ಅರ್ಜುನನ ಬಾಣ ಗುರಿ ಮುಟ್ಟಿತು.",
      "connection": "ಅರ್ಜುನನ ಗಮನ ಸಂಪೂರ್ಣವಾಗಿ ಎದುರಿನ ಕೆಲಸದ ಮೇಲಿತ್ತು — ಚಪ್ಪಾಳೆ, ಪ್ರತಿಸ್ಪರ್ಧಿ ಅಥವಾ ಬಹುಮಾನದ ಮೇಲಲ್ಲ. ಕೆಲಸದಲ್ಲಿ ಪೂರ್ಣ ತನ್ಮಯತೆಯನ್ನೇ ಈ ಶ್ಲೋಕ ಕೇಳುತ್ತದೆ."
     },
     "misreading": "\"ಫಲದ ಬಗ್ಗೆ ಯೋಚಿಸಲೇಬೇಡ\" ಎಂದಲ್ಲ. ಗುರಿ ಹಾಕಿಕೊಳ್ಳಿ, ಯೋಜನೆ ಮಾಡಿ. ಫಲಕ್ಕೆ ಅಂಟಿಕೊಳ್ಳಬೇಡಿ, ಅದರ ಭಯದಿಂದ ಸ್ತಬ್ಧರಾಗಬೇಡಿ ಎಂಬುದೇ ಸಂದೇಶ.",
@@ -204,6 +222,12 @@ window.GITA_DATA = {
     "2.56",
     "2.14"
    ],
+   "sources": {
+    "story": {
+     "cite": "Valmiki Ramayana, Ayodhya Kanda, Sarga 19",
+     "url": "https://www.valmikiramayan.net/ayodhya/sarga19/ayodhya_19_frame.htm"
+    }
+   },
    "en": {
     "title": "Evenness of mind is yoga",
     "essence": "Work steadily, whether it ends in success or failure.",
@@ -256,6 +280,11 @@ window.GITA_DATA = {
     "2.48",
     "6.35"
    ],
+   "sources": {
+    "story": {
+     "cite": "Illustrative story written for this project (not from scripture)"
+    }
+   },
    "en": {
     "title": "Yoga is skill in action",
     "essence": "Bring full attention, care and a calm mind to whatever you do.",
@@ -308,6 +337,11 @@ window.GITA_DATA = {
     "2.47",
     "2.40"
    ],
+   "sources": {
+    "story": {
+     "cite": "Illustrative story written for this project (not from scripture)"
+    }
+   },
    "en": {
     "title": "Every fire has some smoke",
     "essence": "No work is flawless. Don't abandon your duty because it has faults.",
@@ -360,6 +394,11 @@ window.GITA_DATA = {
     "6.5",
     "6.35"
    ],
+   "sources": {
+    "story": {
+     "cite": "Folk tradition, popular in South Indian retellings; not found in Valmiki's Ramayana"
+    }
+   },
    "en": {
     "title": "No sincere effort is ever wasted",
     "essence": "Even a little progress on the right path protects you from great fear.",
@@ -412,6 +451,11 @@ window.GITA_DATA = {
     "2.62-63",
     "2.40"
    ],
+   "sources": {
+    "story": {
+     "cite": "Later tradition (e.g. Adhyatma Ramayana, Skanda Purana); not told in Valmiki's own Ramayana"
+    }
+   },
    "en": {
     "title": "Lift yourself by yourself",
     "essence": "Your own mind can be your best friend or your worst enemy.",
@@ -464,6 +508,18 @@ window.GITA_DATA = {
     "2.40",
     "2.50"
    ],
+   "sources": {
+    "story": {
+     "cite": "Mahabharata, Adi Parva (Sambhava Parva), Section CXXXIV — K. M. Ganguli (trans.), 1883–96",
+     "url": "https://www.wisdomlib.org/hinduism/book/the-mahabharata-mohan/d/doc4127.html"
+    },
+    "more": [
+     {
+      "cite": "Bhagavad Gita 6.34 — Arjuna says the mind is restless and hard to control",
+      "verse": "6.34"
+     }
+    ]
+   },
    "en": {
     "title": "Practice and letting go tame the mind",
     "essence": "The mind is restless — but steady practice and detachment bring it under control.",
@@ -474,7 +530,7 @@ window.GITA_DATA = {
     "story": {
      "title": "Arjuna practises in the dark",
      "source": "Mahabharata, Adi Parva",
-     "text": "One night, as Bhima was eating, a gust of wind blew out the lamp. Bhima kept eating in the dark — his hand found his mouth by habit. Arjuna, watching, realised that practice could make the hand accurate even without sight. From then on he practised archery at night, until he could hit targets in darkness.",
+     "text": "One night, as Arjuna was eating, a gust of wind blew out the lamp. He kept eating in the dark — his hand found his mouth by habit. Arjuna realised that practice could make the hand accurate even without sight. From then on he practised archery at night, until he could hit targets in darkness.",
      "connection": "Abhyasa — steady, repeated practice — makes the impossible natural. Even a restless mind can be trained the same way."
     },
     "misreading": "\"A good person has no distractions.\" No — Krishna openly agrees the mind is restless. The goal is not a perfect mind but a trained one.",
@@ -490,7 +546,7 @@ window.GITA_DATA = {
     "story": {
      "title": "ಕತ್ತಲಲ್ಲಿ ಅರ್ಜುನನ ಅಭ್ಯಾಸ",
      "source": "ಮಹಾಭಾರತ, ಆದಿಪರ್ವ",
-     "text": "ಒಂದು ರಾತ್ರಿ ಭೀಮ ಊಟ ಮಾಡುತ್ತಿದ್ದಾಗ ಗಾಳಿಗೆ ದೀಪ ಆರಿಹೋಯಿತು. ಭೀಮ ಕತ್ತಲಲ್ಲೂ ಊಟ ಮುಂದುವರಿಸಿದ — ಅಭ್ಯಾಸದಿಂದ ಕೈ ಬಾಯಿಗೆ ಸರಿಯಾಗಿ ತಲುಪುತ್ತಿತ್ತು. ಇದನ್ನು ನೋಡಿದ ಅರ್ಜುನ, ಅಭ್ಯಾಸವಿದ್ದರೆ ಕಣ್ಣಿಲ್ಲದೆಯೂ ಕೈ ನಿಖರವಾಗಬಲ್ಲದು ಎಂದು ಅರಿತ. ಅಂದಿನಿಂದ ರಾತ್ರಿ ಬಿಲ್ಲುವಿದ್ಯೆ ಅಭ್ಯಾಸ ಮಾಡಿ, ಕತ್ತಲಲ್ಲೂ ಗುರಿ ಹೊಡೆಯುವಷ್ಟು ನಿಪುಣನಾದ.",
+     "text": "ಒಂದು ರಾತ್ರಿ ಅರ್ಜುನ ಊಟ ಮಾಡುತ್ತಿದ್ದಾಗ ಗಾಳಿಗೆ ದೀಪ ಆರಿಹೋಯಿತು. ಅವನು ಕತ್ತಲಲ್ಲೂ ಊಟ ಮುಂದುವರಿಸಿದ — ಅಭ್ಯಾಸದಿಂದ ಕೈ ಬಾಯಿಗೆ ಸರಿಯಾಗಿ ತಲುಪುತ್ತಿತ್ತು. ಆಗ ಅರ್ಜುನ, ಅಭ್ಯಾಸವಿದ್ದರೆ ಕಣ್ಣಿಲ್ಲದೆಯೂ ಕೈ ನಿಖರವಾಗಬಲ್ಲದು ಎಂದು ಅರಿತ. ಅಂದಿನಿಂದ ರಾತ್ರಿ ಬಿಲ್ಲುವಿದ್ಯೆ ಅಭ್ಯಾಸ ಮಾಡಿ, ಕತ್ತಲಲ್ಲೂ ಗುರಿ ಹೊಡೆಯುವಷ್ಟು ನಿಪುಣನಾದ.",
      "connection": "ಅಭ್ಯಾಸ — ಸ್ಥಿರ, ಪುನರಾವರ್ತಿತ ಪ್ರಯತ್ನ — ಅಸಾಧ್ಯವನ್ನು ಸಹಜವಾಗಿಸುತ್ತದೆ. ಚಂಚಲ ಮನಸ್ಸನ್ನೂ ಹೀಗೆಯೇ ತರಬೇತಿಗೊಳಿಸಬಹುದು."
     },
     "misreading": "\"ಒಳ್ಳೆಯವರಿಗೆ ಯಾವ ಚಂಚಲತೆಯೂ ಇರುವುದಿಲ್ಲ\" ಎಂದಲ್ಲ. ಮನಸ್ಸು ಚಂಚಲ ಎಂದು ಕೃಷ್ಣನೇ ಒಪ್ಪುತ್ತಾನೆ. ಗುರಿ ಪರಿಪೂರ್ಣ ಮನಸ್ಸಲ್ಲ, ತರಬೇತಾದ ಮನಸ್ಸು.",
@@ -516,6 +572,12 @@ window.GITA_DATA = {
     "6.5",
     "2.56"
    ],
+   "sources": {
+    "story": {
+     "cite": "Mahabharata, Sabha Parva, Section XLVI — K. M. Ganguli (trans.), 1883–96",
+     "url": "https://sacred-texts.com/hin/m02/m02046.htm"
+    }
+   },
    "en": {
     "title": "The ladder of fall",
     "essence": "One small thought, left unchecked, can pull a person all the way down.",
@@ -526,7 +588,7 @@ window.GITA_DATA = {
     "story": {
      "title": "Duryodhana at the Hall of Illusions",
      "source": "Mahabharata, Sabha Parva",
-     "text": "Visiting the Pandavas' magnificent new palace, Duryodhana mistook a polished floor for a pool and a pool for a floor, and fell into the water. The Pandavas laughed. He went home and could not stop thinking about their wealth and the laughter. Brooding turned to burning desire, desire to rage, rage to the rigged game of dice — and in the end, to the war that destroyed his family.",
+     "text": "Visiting the Pandavas' magnificent new palace, Duryodhana mistook a polished floor for a pool and a pool for a floor, and fell into the water. Bhima and the palace attendants laughed. He went home and could not stop thinking about their wealth and the laughter. Brooding turned to burning desire, desire to rage, rage to the rigged game of dice — and in the end, to the war that destroyed his family.",
      "connection": "The ruin did not begin at Kurukshetra. It began with a thought he would not let go of."
     },
     "misreading": "\"Never enjoy anything.\" No — the problem is not enjoying things, but obsessive dwelling that lets desire and anger take charge.",
@@ -542,7 +604,7 @@ window.GITA_DATA = {
     "story": {
      "title": "ಮಯಸಭೆಯಲ್ಲಿ ದುರ್ಯೋಧನ",
      "source": "ಮಹಾಭಾರತ, ಸಭಾಪರ್ವ",
-     "text": "ಪಾಂಡವರ ಭವ್ಯ ಹೊಸ ಅರಮನೆಗೆ ಭೇಟಿ ನೀಡಿದ ದುರ್ಯೋಧನ, ನುಣುಪಾದ ನೆಲವನ್ನು ಕೊಳವೆಂದೂ ಕೊಳವನ್ನು ನೆಲವೆಂದೂ ಭ್ರಮಿಸಿ ನೀರಿಗೆ ಬಿದ್ದನು. ಪಾಂಡವರು ನಕ್ಕರು. ಮನೆಗೆ ಮರಳಿದ ಅವನು ಅವರ ಸಂಪತ್ತು ಮತ್ತು ನಗುವಿನ ಬಗ್ಗೆ ಯೋಚಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಲೇ ಇಲ್ಲ. ಚಿಂತನೆ ತೀವ್ರ ಬಯಕೆಯಾಯಿತು, ಬಯಕೆ ಕ್ರೋಧವಾಯಿತು, ಕ್ರೋಧ ಮೋಸದ ಪಗಡೆಯಾಟವಾಯಿತು — ಕೊನೆಗೆ ಅವನ ಕುಲವನ್ನೇ ನಾಶಮಾಡಿದ ಯುದ್ಧವಾಯಿತು.",
+     "text": "ಪಾಂಡವರ ಭವ್ಯ ಹೊಸ ಅರಮನೆಗೆ ಭೇಟಿ ನೀಡಿದ ದುರ್ಯೋಧನ, ನುಣುಪಾದ ನೆಲವನ್ನು ಕೊಳವೆಂದೂ ಕೊಳವನ್ನು ನೆಲವೆಂದೂ ಭ್ರಮಿಸಿ ನೀರಿಗೆ ಬಿದ್ದನು. ಭೀಮ ಮತ್ತು ಅರಮನೆಯ ಸೇವಕರು ನಕ್ಕರು. ಮನೆಗೆ ಮರಳಿದ ಅವನು ಅವರ ಸಂಪತ್ತು ಮತ್ತು ನಗುವಿನ ಬಗ್ಗೆ ಯೋಚಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಲೇ ಇಲ್ಲ. ಚಿಂತನೆ ತೀವ್ರ ಬಯಕೆಯಾಯಿತು, ಬಯಕೆ ಕ್ರೋಧವಾಯಿತು, ಕ್ರೋಧ ಮೋಸದ ಪಗಡೆಯಾಟವಾಯಿತು — ಕೊನೆಗೆ ಅವನ ಕುಲವನ್ನೇ ನಾಶಮಾಡಿದ ಯುದ್ಧವಾಯಿತು.",
      "connection": "ವಿನಾಶ ಕುರುಕ್ಷೇತ್ರದಲ್ಲಿ ಆರಂಭವಾಗಲಿಲ್ಲ. ಅವನು ಬಿಡಲೊಲ್ಲದ ಒಂದು ಆಲೋಚನೆಯಿಂದ ಆರಂಭವಾಯಿತು."
     },
     "misreading": "\"ಯಾವುದನ್ನೂ ಆನಂದಿಸಬೇಡ\" ಎಂದಲ್ಲ. ಸಮಸ್ಯೆ ಆನಂದದಲ್ಲಲ್ಲ; ಬಯಕೆ ಮತ್ತು ಕ್ರೋಧ ಹಿಡಿತ ಪಡೆಯುವಂತೆ ಮಾಡುವ ಗೀಳಿನ ಚಿಂತನೆಯಲ್ಲಿ.",
@@ -575,6 +637,12 @@ window.GITA_DATA = {
     "6.5",
     "17.15"
    ],
+   "sources": {
+    "story": {
+     "cite": "Valmiki Ramayana, Yuddha Kanda, Sargas 14–16 (Vibhishana's counsel and banishment)",
+     "url": "https://www.valmikiramayan.net/utf8/yuddha/sarga14/yuddha_14_prose.htm"
+    }
+   },
    "en": {
     "title": "Three gates to self-destruction",
     "essence": "Lust, anger and greed destroy us from within. Close these three gates.",
@@ -627,6 +695,12 @@ window.GITA_DATA = {
     "2.56",
     "2.22"
    ],
+   "sources": {
+    "story": {
+     "cite": "Mahabharata, Vana Parva and Virata Parva — K. M. Ganguli (trans.), 1883–96",
+     "url": "https://sacred-texts.com/hin/m04/index.htm"
+    }
+   },
    "en": {
     "title": "This too will pass — endure it",
     "essence": "Heat and cold, pleasure and pain come and go. Bear them patiently.",
@@ -679,6 +753,12 @@ window.GITA_DATA = {
     "2.14",
     "2.62-63"
    ],
+   "sources": {
+    "story": {
+     "cite": "Mahabharata, Shanti Parva 12.17.18–19 and 12.219 (critical edition numbering)",
+     "url": "https://www.wisdomlib.org/hinduism/book/mahabharata-sanskrit/d/doc1017040.html"
+    }
+   },
    "en": {
     "title": "The person of steady wisdom",
     "essence": "Not shaken by sorrow, not craving pleasure, free from clinging, fear and anger.",
@@ -731,6 +811,18 @@ window.GITA_DATA = {
     "2.48",
     "2.50"
    ],
+   "sources": {
+    "story": {
+     "cite": "Aṅguttara Nikāya 6.55, Soṇa Sutta — trans. Bhikkhu Sujato",
+     "url": "https://suttacentral.net/an6.55/en/sujato"
+    },
+    "more": [
+     {
+      "cite": "Bhagavad Gita 6.16 — yoga is not for one who eats or sleeps too much or too little",
+      "verse": "6.16"
+     }
+    ]
+   },
    "en": {
     "title": "Balance in food, rest, work and play",
     "essence": "Not too much, not too little. Balanced living removes sorrow.",
@@ -783,6 +875,18 @@ window.GITA_DATA = {
     "6.5",
     "18.63"
    ],
+   "sources": {
+    "story": {
+     "cite": "Katha Upanishad, Part 1, Valli 1 — trans. F. Max Müller (1884)",
+     "url": "https://www.hinduwebsite.com/sacredscripts/hinduism/upanishads/katha.asp"
+    },
+    "more": [
+     {
+      "cite": "Bhagavad Gita 18.63 — reflect fully, then choose",
+      "verse": "18.63"
+     }
+    ]
+   },
    "en": {
     "title": "Learn with humility, questions and service",
     "essence": "Approach a teacher humbly, ask sincere questions, and serve — and knowledge will be shared with you.",
@@ -793,7 +897,7 @@ window.GITA_DATA = {
     "story": {
      "title": "Nachiketa at the door of Death",
      "source": "Katha Upanishad",
-     "text": "The boy Nachiketa went to the house of Yama, the lord of death, and waited three days at the door without food. Pleased, Yama offered three boons. Nachiketa refused wealth, long life and pleasures, and asked the one question that mattered: \"What happens after death — what is the self?\" Tested and found sincere, he was taught the highest knowledge.",
+     "text": "The boy Nachiketa went to the house of Yama, the lord of death, and waited three days at the door without food. To make amends, Yama offered three boons. For the third, Nachiketa asked: \"What happens after death — what is the self?\" Yama tried to put him off, offering wealth, long life and pleasures instead. Nachiketa refused them all. Tested and found sincere, he was taught the highest knowledge.",
      "connection": "Patience (humility), the right question, and sincerity (service) opened the door to wisdom — exactly the three steps of this verse."
     },
     "misreading": "\"Blindly obey any teacher.\" No — \"paripraśna\" means questioning deeply. The Gita wants questions, and at the end (18.63) asks you to reflect for yourself.",
@@ -809,7 +913,7 @@ window.GITA_DATA = {
     "story": {
      "title": "ಯಮನ ಬಾಗಿಲಲ್ಲಿ ನಚಿಕೇತ",
      "source": "ಕಠೋಪನಿಷತ್",
-     "text": "ಬಾಲಕ ನಚಿಕೇತ ಮೃತ್ಯುದೇವ ಯಮನ ಮನೆಗೆ ಹೋಗಿ, ಮೂರು ದಿನ ಆಹಾರವಿಲ್ಲದೆ ಬಾಗಿಲಲ್ಲಿ ಕಾದನು. ಸಂತುಷ್ಟನಾದ ಯಮ ಮೂರು ವರಗಳನ್ನು ನೀಡಿದನು. ನಚಿಕೇತ ಸಂಪತ್ತು, ದೀರ್ಘಾಯುಷ್ಯ, ಭೋಗಗಳನ್ನು ನಿರಾಕರಿಸಿ, ಮುಖ್ಯವಾದ ಒಂದೇ ಪ್ರಶ್ನೆ ಕೇಳಿದನು: \"ಮರಣದ ನಂತರ ಏನಾಗುತ್ತದೆ — ಆತ್ಮ ಎಂದರೇನು?\" ಪರೀಕ್ಷಿಸಿ ಪ್ರಾಮಾಣಿಕನೆಂದು ಕಂಡ ಯಮ ಅವನಿಗೆ ಪರಮ ಜ್ಞಾನವನ್ನು ಉಪದೇಶಿಸಿದನು.",
+     "text": "ಬಾಲಕ ನಚಿಕೇತ ಮೃತ್ಯುದೇವ ಯಮನ ಮನೆಗೆ ಹೋಗಿ, ಮೂರು ದಿನ ಆಹಾರವಿಲ್ಲದೆ ಬಾಗಿಲಲ್ಲಿ ಕಾದನು. ಅದಕ್ಕೆ ಪರಿಹಾರವಾಗಿ ಯಮ ಮೂರು ವರಗಳನ್ನು ನೀಡಿದನು. ಮೂರನೆಯ ವರವಾಗಿ ನಚಿಕೇತ ಕೇಳಿದನು: \"ಮರಣದ ನಂತರ ಏನಾಗುತ್ತದೆ — ಆತ್ಮ ಎಂದರೇನು?\" ಯಮ ಅದರ ಬದಲು ಸಂಪತ್ತು, ದೀರ್ಘಾಯುಷ್ಯ, ಭೋಗಗಳನ್ನು ನೀಡಲು ಮುಂದಾದನು; ನಚಿಕೇತ ಎಲ್ಲವನ್ನೂ ನಿರಾಕರಿಸಿದನು. ಪರೀಕ್ಷಿಸಿ ಪ್ರಾಮಾಣಿಕನೆಂದು ಕಂಡ ಯಮ ಅವನಿಗೆ ಪರಮ ಜ್ಞಾನವನ್ನು ಉಪದೇಶಿಸಿದನು.",
      "connection": "ತಾಳ್ಮೆ (ನಮ್ರತೆ), ಸರಿಯಾದ ಪ್ರಶ್ನೆ, ಮತ್ತು ಪ್ರಾಮಾಣಿಕತೆ (ಸೇವಾಭಾವ) ಜ್ಞಾನದ ಬಾಗಿಲು ತೆರೆದವು — ಈ ಶ್ಲೋಕದ ಮೂರು ಹೆಜ್ಜೆಗಳೇ ಇವು."
     },
     "misreading": "\"ಯಾವ ಗುರುವನ್ನಾದರೂ ಕುರುಡಾಗಿ ಅನುಸರಿಸು\" ಎಂದಲ್ಲ. \"ಪರಿಪ್ರಶ್ನ\" ಎಂದರೆ ಆಳವಾಗಿ ಪ್ರಶ್ನಿಸುವುದು. ಗೀತೆ ಪ್ರಶ್ನೆಗಳನ್ನು ಬಯಸುತ್ತದೆ, ಕೊನೆಯಲ್ಲಿ (18.63) ನೀವೇ ವಿಮರ್ಶಿಸಿ ಎನ್ನುತ್ತದೆ.",
@@ -835,6 +939,11 @@ window.GITA_DATA = {
     "2.50",
     "6.5"
    ],
+   "sources": {
+    "story": {
+     "cite": "Popular anecdote attributed to Gandhi; no primary source has been found"
+    }
+   },
    "en": {
     "title": "People follow what you do",
     "essence": "Whatever a leader does, others follow. Lead by example.",
@@ -887,6 +996,12 @@ window.GITA_DATA = {
     "3.21",
     "16.21"
    ],
+   "sources": {
+    "story": {
+     "cite": "Valmiki Ramayana, Kishkindha Kanda, Sarga 3",
+     "url": "https://www.valmikiramayan.net/utf8/kish/sarga3/kishkindhaitrans3.htm"
+    }
+   },
    "en": {
     "title": "Speak truly, kindly and helpfully",
     "essence": "Words that do not agitate, that are true, pleasant and beneficial — this is the discipline of speech.",
@@ -939,6 +1054,12 @@ window.GITA_DATA = {
     "9.26",
     "2.56"
    ],
+   "sources": {
+    "story": {
+     "cite": "Mahabharata, Mahaprasthanika Parva, Section 3 — K. M. Ganguli (trans.), 1883–96",
+     "url": "https://sacred-texts.com/hin/m17/m17003.htm"
+    }
+   },
    "en": {
     "title": "Friendly and compassionate to all",
     "essence": "Hate no one; be friendly and kind; drop 'mine' and 'I'; stay even and forgiving.",
@@ -991,6 +1112,12 @@ window.GITA_DATA = {
     "17.15",
     "2.50"
    ],
+   "sources": {
+    "story": {
+     "cite": "Bhagavata Purana, Canto 10, Chapters 80–81",
+     "url": "https://vedabase.io/en/library/sb/10/81/"
+    }
+   },
    "en": {
     "title": "A leaf, a flower, a fruit, a little water",
     "essence": "It is the love behind the offering that matters, not its cost.",
@@ -1001,7 +1128,7 @@ window.GITA_DATA = {
     "story": {
      "title": "Sudama's handful of rice",
      "source": "Bhagavata Purana, Book 10",
-     "text": "Sudama, Krishna's childhood friend, was very poor. His wife urged him to visit Krishna, now king of Dwaraka. With nothing else to bring, Sudama carried a handful of flattened rice tied in a cloth, too ashamed to offer it. Krishna found it, and ate it with delight as if it were the finest feast — and Sudama returned home to find his poverty gone.",
+     "text": "Sudama (as tradition names him), Krishna's childhood friend, was very poor. His wife urged him to visit Krishna, now king of Dwaraka. With nothing else to bring, Sudama carried a handful of flattened rice tied in a cloth, too ashamed to offer it. Krishna found it, and ate it with delight as if it were the finest feast — and Sudama returned home to find his poverty gone.",
      "connection": "Krishna did not see the value of the rice; he saw the love of his friend."
     },
     "misreading": "\"God or people only care about rituals and offerings.\" No — the verse shifts the value from the object to the heart. Without love, even a golden offering is empty.",
@@ -1043,6 +1170,12 @@ window.GITA_DATA = {
     "2.56",
     "18.63"
    ],
+   "sources": {
+    "story": {
+     "cite": "Mahabharata, Vana Parva (Aranya Parva), Sections 311–313, the Yaksha's questions — K. M. Ganguli (trans.), 1883–96",
+     "url": "https://sacred-texts.com/hin/m03/index.htm"
+    }
+   },
    "en": {
     "title": "Like changing old clothes",
     "essence": "As we discard worn-out clothes for new ones, the self moves on from a worn-out body.",
@@ -1095,6 +1228,12 @@ window.GITA_DATA = {
     "2.3",
     "3.35"
    ],
+   "sources": {
+    "story": {
+     "cite": "Bhagavad Gita 18.63 and 18.73",
+     "verse": "18.73"
+    }
+   },
    "en": {
     "title": "Reflect fully, then choose freely",
     "essence": "After all the teaching, the choice is yours. Think it through, then act.",

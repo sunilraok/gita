@@ -3,6 +3,10 @@ day: 2
 theme: courage
 illustration: own-path
 related: ["18.48", "2.3", "6.5"]
+sources:
+  story:
+    cite: 'Bhagavad Gita 2.5 (Arjuna: better to live on alms) and 3.35'
+    verse: '3.35'
 en:
   title: "Walk your own path"
   essence: "Your own path, walked imperfectly, is better than someone else's copied perfectly."

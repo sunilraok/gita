@@ -3,6 +3,10 @@ day: 17
 theme: relationships
 illustration: speech-filter
 related: ["12.13", "3.21", "16.21"]
+sources:
+  story:
+    cite: Valmiki Ramayana, Kishkindha Kanda, Sarga 3
+    url: https://www.valmikiramayan.net/utf8/kish/sarga3/kishkindhaitrans3.htm
 en:
   title: "Speak truly, kindly and helpfully"
   essence: "Words that do not agitate, that are true, pleasant and beneficial — this is the discipline of speech."

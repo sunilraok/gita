@@ -34,6 +34,16 @@
       misreading: "What it does not mean",
       practice: "Try this today",
       related: "Related shlokas",
+      sources: "Sources and further reading",
+      srcText: "Sanskrit text, transliteration and word meanings",
+      srcDataset: "gita/gita dataset (public domain)",
+      srcRead: "Read this verse with more translations and commentaries",
+      srcCompare: "Compare with public-domain English translations",
+      srcStory: "Story",
+      srcAlso: "Also mentioned",
+      meaningNote: "Meaning written in simple words for this project.",
+      compare: "Compare translations",
+      thisSite: "on this site",
       prev: "Previous",
       next: "Next",
       picture: "The idea in a picture",
@@ -71,6 +81,16 @@
       misreading: "ಇದರ ಅರ್ಥ ಇದಲ್ಲ",
       practice: "ಇಂದು ಇದನ್ನು ಪ್ರಯತ್ನಿಸಿ",
       related: "ಸಂಬಂಧಿತ ಶ್ಲೋಕಗಳು",
+      sources: "ಆಧಾರಗಳು ಮತ್ತು ಹೆಚ್ಚಿನ ಓದು",
+      srcText: "ಸಂಸ್ಕೃತ ಪಠ್ಯ, ಲಿಪ್ಯಂತರ ಮತ್ತು ಪದಶಃ ಅರ್ಥ",
+      srcDataset: "gita/gita ದತ್ತಾಂಶ (ಸಾರ್ವಜನಿಕ ಡೊಮೇನ್)",
+      srcRead: "ಈ ಶ್ಲೋಕವನ್ನು ಇನ್ನಷ್ಟು ಅನುವಾದ ಮತ್ತು ವ್ಯಾಖ್ಯಾನಗಳೊಂದಿಗೆ ಓದಿ",
+      srcCompare: "ಸಾರ್ವಜನಿಕ ಡೊಮೇನ್‌ನ ಇಂಗ್ಲಿಷ್ ಅನುವಾದಗಳೊಂದಿಗೆ ಹೋಲಿಸಿ",
+      srcStory: "ಕಥೆ",
+      srcAlso: "ಉಲ್ಲೇಖಿಸಿದ ಇತರ ಶ್ಲೋಕಗಳು",
+      meaningNote: "ಅರ್ಥವನ್ನು ಈ ಯೋಜನೆಗಾಗಿ ಸರಳ ಪದಗಳಲ್ಲಿ ಬರೆಯಲಾಗಿದೆ.",
+      compare: "ಅನುವಾದಗಳನ್ನು ಹೋಲಿಸಿ",
+      thisSite: "ಈ ಜಾಲತಾಣದಲ್ಲಿ",
       prev: "ಹಿಂದಿನ",
       next: "ಮುಂದಿನ",
       picture: "ಚಿತ್ರದಲ್ಲಿ ವಿಚಾರ",
@@ -134,6 +154,41 @@
     home: `<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 24 24 8l18 16" fill="none" stroke="#9E3B2A" stroke-width="4" stroke-linejoin="round"/><path d="M11 22v18h26V22" fill="#F6C27A"/><rect x="20" y="28" width="8" height="12" fill="#9E3B2A"/><path d="M24 20c-3-3-7 0-4 3l4 3 4-3c3-3-1-6-4-3Z" fill="#D9687A"/></svg>`,
     work: `<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="16" width="36" height="24" rx="4" fill="#1B3A6B"/><path d="M18 16v-4h12v4" fill="none" stroke="#1B3A6B" stroke-width="3"/><rect x="6" y="24" width="36" height="4" fill="#C9A227"/><rect x="21" y="22" width="6" height="8" rx="1" fill="#E8811A"/></svg>`,
   };
+
+  // ---- sources -------------------------------------------------------------
+  const TRANSLATIONS = [
+    { cite: "Edwin Arnold, The Song Celestial (1885) — Project Gutenberg #2388", url: "https://www.gutenberg.org/ebooks/2388" },
+    { cite: "Kashinath Trimbak Telang, The Bhagavadgītā (Sacred Books of the East, vol. 8, 1882)", url: "https://sacred-texts.com/hin/sbe08/index.htm" },
+  ];
+  const firstVerse = (ref) => { const [c, v] = ref.split("."); return [c, v.split("-")[0]]; };
+  const verseLinks = (ref) => {
+    const [c, v] = firstVerse(ref);
+    return [
+      { cite: `bhagavadgita.io — ${c}.${v}`, url: `https://bhagavadgita.io/chapter/${c}/verse/${v}/` },
+      { cite: `Gita Supersite, IIT Kanpur — ${c}.${v}`, url: `https://www.gitasupersite.iitk.ac.in/srimad?language=dv&field_chapter_value=${c}&field_nsutra_value=${v}` },
+    ];
+  };
+  const ext = (r) => r.url
+    ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.cite)}</a>`
+    : esc(r.cite);
+  function citeVerse(r) {
+    if (byRef[r.verse]) return `${esc(r.cite)} — <a href="#/shloka/${esc(r.verse)}">${t("thisSite")}</a>`;
+    const [c, v] = firstVerse(r.verse);
+    return `<a href="https://bhagavadgita.io/chapter/${c}/verse/${v}/" target="_blank" rel="noopener">${esc(r.cite)}</a>`;
+  }
+  const citeAny = (r) => (r.verse ? citeVerse(r) : ext(r));
+
+  function sourcesBlock(s) {
+    const src = s.sources || {};
+    const items = [
+      `<li><strong>${t("srcText")}:</strong> <a href="https://github.com/gita/gita" target="_blank" rel="noopener">${t("srcDataset")}</a></li>`,
+      `<li><strong>${t("srcRead")}:</strong> ${verseLinks(s.ref).map(ext).join(" · ")}</li>`,
+      `<li id="compare-${esc(s.ref)}"><strong>${t("srcCompare")}:</strong> ${TRANSLATIONS.map(ext).join(" · ")}</li>`,
+    ];
+    if (src.story) items.push(`<li><strong>${t("srcStory")}:</strong> ${citeAny(src.story)}</li>`);
+    if (src.more && src.more.length) items.push(`<li><strong>${t("srcAlso")}:</strong> ${src.more.map(citeAny).join(" · ")}</li>`);
+    return `<section class="block sources" id="sources"><h2>${t("sources")}</h2><ol>${items.join("")}</ol></section>`;
+  }
 
   // ---- views --------------------------------------------------------------
   function card(s) {
@@ -204,6 +259,7 @@
         <section class="block">
           <h2>${t("meaning")}</h2>
           <p class="meaning">${rich(c.meaning)}</p>
+          <p class="cite-note">${t("meaningNote")} <a href="#/shloka/${s.ref}" data-jump="sources">${t("compare")} ↓</a></p>
           <details class="words"><summary>${t("words")}</summary>${words}</details>
         </section>
 
@@ -216,7 +272,7 @@
 
         <section class="block story">
           <h2>${t("story")}: ${esc(c.story.title)}</h2>
-          <p class="source">${esc(c.story.source)}</p>
+          <p class="source">${esc(c.story.source)}${s.sources && s.sources.story ? ` · <span class="source-cite">${citeAny(s.sources.story)}</span>` : ""}</p>
           <p>${rich(c.story.text)}</p>
           <p class="connection"><strong>${t("link")}:</strong> ${rich(c.story.connection)}</p>
         </section>
@@ -226,6 +282,8 @@
           <section class="block note practice"><h2>${t("practice")}</h2><p>${rich(c.practice)}</p></section>
         </div>
 
+        ${sourcesBlock(s)}
+
         ${related ? `<section class="block"><h2>${t("related")}</h2><div class="chips">${related}</div></section>` : ""}
 
         <nav class="pager">
@@ -233,6 +291,15 @@
           ${next ? `<a class="next" href="#/shloka/${next.ref}">${t("next")} →<span>${esc(L(next).title)}</span></a>` : "<span></span>"}
         </nav>
       </article>`;
+  }
+
+  function worksCited() {
+    const seen = new Map();
+    const add = (r) => { if (r && r.url && !seen.has(r.url)) seen.set(r.url, r); };
+    TRANSLATIONS.forEach(add);
+    DATA.shlokas.forEach((sh) => add(sh.sources && sh.sources.story));
+    return [{ cite: "gita/gita — Bhagavad Gita dataset (Unlicense)", url: "https://github.com/gita/gita" }, ...seen.values()]
+      .map((r) => `<li>${ext(r)}</li>`).join("");
   }
 
   function viewAbout() {
@@ -246,8 +313,11 @@
         <ul>
           <li>ಸಂಸ್ಕೃತ ಪಠ್ಯ, ಲಿಪ್ಯಂತರ ಮತ್ತು ಪದಶಃ ಅರ್ಥ: <a href="https://github.com/gita/gita">gita/gita</a> ದತ್ತಾಂಶ (Unlicense — ಸಾರ್ವಜನಿಕ ಡೊಮೇನ್). ಕನ್ನಡ ಲಿಪಿಯನ್ನು ದೇವನಾಗರಿಯಿಂದ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ರೂಪಿಸಲಾಗಿದೆ.</li>
           <li>ಕಥೆಗಳು: ಮಹಾಭಾರತ, ರಾಮಾಯಣ, ಪುರಾಣಗಳು ಮತ್ತು ಉಪನಿಷತ್ತುಗಳು; ಜನಪದ ಕಥೆಗಳು ಮತ್ತು ದೃಷ್ಟಾಂತ ಕಥೆಗಳನ್ನು ಹಾಗೆಂದೇ ಸೂಚಿಸಲಾಗಿದೆ.</li>
+          <li>ಪ್ರತಿ ಶ್ಲೋಕದ ಪುಟದ ಕೊನೆಯಲ್ಲಿ ಆಧಾರಗಳ ಪಟ್ಟಿ ಇದೆ — ಪ್ರತಿ ಕಥೆಯ ಗ್ರಂಥ ಮತ್ತು ಅಧ್ಯಾಯವನ್ನೂ ಸೂಚಿಸಲಾಗಿದೆ.</li>
           <li>ಅರ್ಥ ಮತ್ತು ಅನ್ವಯಗಳನ್ನು ಈ ಯೋಜನೆಗಾಗಿ ಹೊಸದಾಗಿ ಬರೆಯಲಾಗಿದೆ.</li>
         </ul>
+        <h2>ಉಲ್ಲೇಖಿತ ಗ್ರಂಥಗಳು</h2>
+        <ul class="works">${worksCited()}</ul>
         <h2>ಪರಿಶೀಲನೆ</h2>
         <p>ಕನ್ನಡ ಅನುವಾದವು ಕರಡು ರೂಪದಲ್ಲಿದೆ; ಕನ್ನಡ ಮತ್ತು ಸಂಸ್ಕೃತ ಬಲ್ಲವರಿಂದ ಪರಿಶೀಲನೆ ಬಾಕಿ ಇದೆ. ತಿದ್ದುಪಡಿಗಳಿಗೆ ಸ್ವಾಗತ.</p>
       </article>`;
@@ -261,8 +331,11 @@
       <ul>
         <li>Sanskrit text, transliteration and word-by-word meanings: the <a href="https://github.com/gita/gita">gita/gita</a> dataset (Unlicense — public domain). Kannada script is generated automatically from the Devanagari.</li>
         <li>Stories come from the Mahabharata, Ramayana, Puranas and Upanishads. Folk tales and illustrative modern stories are labelled as such.</li>
+        <li>Each shloka page ends with its own list of sources, including the exact book and section for every story.</li>
         <li>Meanings and applications are written fresh for this project. A check against public-domain translations (Edwin Arnold 1885, K. T. Telang 1882) is planned.</li>
       </ul>
+      <h2>Works cited</h2>
+      <ul class="works">${worksCited()}</ul>
       <h2>Review</h2>
       <p>The Kannada translation is a first draft awaiting review by native Kannada and Sanskrit readers. Corrections are welcome.</p>
     </article>`;
@@ -303,6 +376,13 @@
   }
 
   app.addEventListener("click", (e) => {
+    const j = e.target.closest("[data-jump]");
+    if (j) {
+      e.preventDefault();
+      const el = document.getElementById(j.dataset.jump);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
     const b = e.target.closest("[data-script]");
     if (b) setScript(b.dataset.script);
   });

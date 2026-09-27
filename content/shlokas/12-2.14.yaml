@@ -3,6 +3,10 @@ day: 12
 theme: steady
 illustration: seasons-cycle
 related: ["2.48", "2.56", "2.22"]
+sources:
+  story:
+    cite: Mahabharata, Vana Parva and Virata Parva — K. M. Ganguli (trans.), 1883–96
+    url: https://sacred-texts.com/hin/m04/index.htm
 en:
   title: "This too will pass — endure it"
   essence: "Heat and cold, pleasure and pain come and go. Bear them patiently."

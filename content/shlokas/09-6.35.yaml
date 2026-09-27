@@ -3,6 +3,13 @@ day: 9
 theme: mind
 illustration: boat-oars
 related: ["6.5", "2.40", "2.50"]
+sources:
+  story:
+    cite: Mahabharata, Adi Parva (Sambhava Parva), Section CXXXIV — K. M. Ganguli (trans.), 1883–96
+    url: https://www.wisdomlib.org/hinduism/book/the-mahabharata-mohan/d/doc4127.html
+  more:
+  - cite: Bhagavad Gita 6.34 — Arjuna says the mind is restless and hard to control
+    verse: '6.34'
 en:
   title: "Practice and letting go tame the mind"
   essence: "The mind is restless — but steady practice and detachment bring it under control."
@@ -25,10 +32,10 @@ en:
     title: "Arjuna practises in the dark"
     source: "Mahabharata, Adi Parva"
     text: >-
-      One night, as Bhima was eating, a gust of wind blew out the lamp. Bhima
-      kept eating in the dark — his hand found his mouth by habit. Arjuna,
-      watching, realised that practice could make the hand accurate even
-      without sight. From then on he practised archery at night, until he
+      One night, as Arjuna was eating, a gust of wind blew out the lamp. He
+      kept eating in the dark — his hand found his mouth by habit. Arjuna
+      realised that practice could make the hand accurate even without
+      sight. From then on he practised archery at night, until he
       could hit targets in darkness.
     connection: >-
       Abhyasa — steady, repeated practice — makes the impossible natural. Even
@@ -59,8 +66,8 @@ kn:
     title: "ಕತ್ತಲಲ್ಲಿ ಅರ್ಜುನನ ಅಭ್ಯಾಸ"
     source: "ಮಹಾಭಾರತ, ಆದಿಪರ್ವ"
     text: >-
-      ಒಂದು ರಾತ್ರಿ ಭೀಮ ಊಟ ಮಾಡುತ್ತಿದ್ದಾಗ ಗಾಳಿಗೆ ದೀಪ ಆರಿಹೋಯಿತು. ಭೀಮ ಕತ್ತಲಲ್ಲೂ ಊಟ
-      ಮುಂದುವರಿಸಿದ — ಅಭ್ಯಾಸದಿಂದ ಕೈ ಬಾಯಿಗೆ ಸರಿಯಾಗಿ ತಲುಪುತ್ತಿತ್ತು. ಇದನ್ನು ನೋಡಿದ
+      ಒಂದು ರಾತ್ರಿ ಅರ್ಜುನ ಊಟ ಮಾಡುತ್ತಿದ್ದಾಗ ಗಾಳಿಗೆ ದೀಪ ಆರಿಹೋಯಿತು. ಅವನು ಕತ್ತಲಲ್ಲೂ
+      ಊಟ ಮುಂದುವರಿಸಿದ — ಅಭ್ಯಾಸದಿಂದ ಕೈ ಬಾಯಿಗೆ ಸರಿಯಾಗಿ ತಲುಪುತ್ತಿತ್ತು. ಆಗ
       ಅರ್ಜುನ, ಅಭ್ಯಾಸವಿದ್ದರೆ ಕಣ್ಣಿಲ್ಲದೆಯೂ ಕೈ ನಿಖರವಾಗಬಲ್ಲದು ಎಂದು ಅರಿತ. ಅಂದಿನಿಂದ
       ರಾತ್ರಿ ಬಿಲ್ಲುವಿದ್ಯೆ ಅಭ್ಯಾಸ ಮಾಡಿ, ಕತ್ತಲಲ್ಲೂ ಗುರಿ ಹೊಡೆಯುವಷ್ಟು ನಿಪುಣನಾದ.
     connection: >-

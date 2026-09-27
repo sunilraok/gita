@@ -3,6 +3,10 @@ day: 4
 theme: work
 illustration: balance-scale
 related: ["2.47", "2.56", "2.14"]
+sources:
+  story:
+    cite: Valmiki Ramayana, Ayodhya Kanda, Sarga 19
+    url: https://www.valmikiramayan.net/ayodhya/sarga19/ayodhya_19_frame.htm
 en:
   title: "Evenness of mind is yoga"
   essence: "Work steadily, whether it ends in success or failure."

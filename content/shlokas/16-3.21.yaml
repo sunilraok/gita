@@ -3,6 +3,9 @@ day: 16
 theme: relationships
 illustration: footsteps
 related: ["17.15", "2.50", "6.5"]
+sources:
+  story:
+    cite: Popular anecdote attributed to Gandhi; no primary source has been found
 en:
   title: "People follow what you do"
   essence: "Whatever a leader does, others follow. Lead by example."

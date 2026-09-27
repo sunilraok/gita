@@ -3,6 +3,13 @@ day: 14
 theme: learning
 illustration: balance-wheel
 related: ["6.35", "2.48", "2.50"]
+sources:
+  story:
+    cite: Aṅguttara Nikāya 6.55, Soṇa Sutta — trans. Bhikkhu Sujato
+    url: https://suttacentral.net/an6.55/en/sujato
+  more:
+  - cite: Bhagavad Gita 6.16 — yoga is not for one who eats or sleeps too much or too little
+    verse: '6.16'
 en:
   title: "Balance in food, rest, work and play"
   essence: "Not too much, not too little. Balanced living removes sorrow."

@@ -3,6 +3,11 @@ day: 20
 theme: life
 illustration: old-new-clothes
 related: ["2.14", "2.56", "18.63"]
+sources:
+  story:
+    cite: Mahabharata, Vana Parva (Aranya Parva), Sections 311–313, the Yaksha's questions — K. M. Ganguli
+      (trans.), 1883–96
+    url: https://sacred-texts.com/hin/m03/index.htm
 en:
   title: "Like changing old clothes"
   essence: "As we discard worn-out clothes for new ones, the self moves on from a worn-out body."
